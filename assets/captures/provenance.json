@@ -1,0 +1,15 @@
+{
+  "source": "Captures fournies par l’utilisateur le 27 octobre 2026",
+  "transformations": "Recadrage, annotations et deux montages explicitement légendés. Aucun contrôle ni état inventé.",
+  "fichiers": [
+    "01-extension-installee.webp",
+    "02-ouvrir-to-block.webp",
+    "03-add-paste-handles.webp",
+    "04-coller-ajouter.webp",
+    "05-block-start-queue.webp",
+    "06-traitement-en-cours.webp",
+    "07-verifier-sur-x.webp",
+    "08-profil-x-save-handle.webp"
+  ],
+  "absence": "Aucune capture de sélection sur le site, de collage rempli ou de traitement terminé. La sixième capture montre le traitement en cours ; la septième montre un profil X bloqué."
+}
