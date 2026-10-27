@@ -7,6 +7,7 @@ def data(path):
     mime=mimetypes.guess_type(str(p))[0] or 'application/octet-stream'
     return 'data:'+mime+';base64,'+base64.b64encode(p.read_bytes()).decode()
 html=(root/'index.html').read_text()
+html=html.replace('<script src="analytics.js" defer></script>', '')
 css=(root/'styles.css').read_text()
 css=re.sub(r'url\((assets/[^)]+)\)',lambda m:'url('+data(m[1])+')',css)
 html=html.replace('<link rel="stylesheet" href="styles.css">','<style>'+css+'</style>')
