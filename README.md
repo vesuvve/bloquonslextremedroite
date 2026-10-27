@@ -9,7 +9,7 @@ Initiative indépendante, non éditée par La France insoumise. Aucun compte n�
 ## Fonctionnement
 
 - HTML, CSS et JavaScript sans dépendances.
-- Pas d’inscription, de connexion à X, de mot de passe, d’analytics ni d’appel réseau applicatif.
+- Pas d’inscription, de connexion à X ou de mot de passe. Les opérations de sélection restent locales.
 - Les ajouts et sélections restent dans la mémoire de l’onglet et ne sont pas enregistrés sur un serveur.
 - Tous les comptes proposés sont cochés au chargement.
 - Le TXT est destiné au copier-coller multiligne dans l’extension, pas à son import direct de fichier.
@@ -54,3 +54,9 @@ Le code original est sous [licence MIT](LICENSE). Cette licence ne couvre pas le
 Sources et contributions : https://github.com/vesuvve/bloquonslextremedroite
 
 Le site est déployé sur Vercel. Le raccordement automatique à ce dépôt est une étape de configuration distincte.
+
+## Fréquentation
+
+`analytics.js` charge Vercel Web Analytics uniquement sur le domaine de production, pour les pages vues. Aucun événement de clic, identifiant X ou contenu de formulaire n’est envoyé. Le champ URL est ramené à la racine du site et le référent est vidé. Les préférences DNT et GPC désactivent le chargement. Activer Web Analytics dans Vercel puis redéployer pour servir `/_vercel/insights/script.js`. Consulter les statistiques dans le projet Vercel, onglet Analytics. Aucun abonnement supplémentaire n’est souscrit par ce code.
+
+La version HTML autonome et le serveur local n’utilisent pas cette mesure.
