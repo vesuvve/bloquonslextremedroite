@@ -14,5 +14,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://onbloquelextremedroite.fun/site",
+      "permanent": false
+    }
   ]
 }
